@@ -493,6 +493,7 @@ tr:hover {
   font-size: 15px;
   line-height: 24px;
   color: #737373;
+  
 }
 
 .site-footer a {
@@ -517,7 +518,7 @@ tr:hover {
   background-color: #33353d;
 }
 .copyright-text {
-  margin-left: 30%;
+  margin-left: 50%;
   text-align: center;
 }
 
