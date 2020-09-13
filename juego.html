@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shorcut icon" type="image/x-icon" href="/img/favicon.ico">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/all.miin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/juego.css" />
+    <link rel="javascript" href="js/main.js">
+    
+
+    <title class="logotipo">InfoMovie</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+
+    <!-- Material Diseño Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>>
+<body>
+    
+    
+
+        <div class="contenedor-juego">
+        <h2>¿Cuantas peliculas de <br> "El Padrino" existen? </h2>
+        <br> 
+        <p>Para comenzar debes ingresar tu nombre y luego la respuesta que creas correcta</p>
+        <div class="imagen-juego" id="instructions">
+            
+            <p>
+            <span id="input-name">¿Cuál es tu nombre?</span> 
+            <input type="text" id="nombre" placeholder="Ingresá tu nombre">
+            </p>
+            <button id="play-button" class="btn btn-outline-primary btn-lg" onclick="jugar_ahora()">Jugar
+            <!-- <span id="icon-game"><i class="fas fa-gamepad"></i></span> -->
+            </button>
+        
+        <br> 
+        
+           
+
+        </div>
+
+
+
+
+        
+
+        <p id="solution"></p>
+
+ <script>
+        function jugar_ahora() {
+            var cant_intentos = 4;
+            var acierto = false;
+            var answer;
+            var correctAnswer = "3";
+            var nombre=document.getElementById("nombre").value;
+            if(nombre=="")
+            {
+                alert("Por favor, ingrese su nombre para JUGAR");
+            }
+            else
+            {
+                while(cant_intentos>0 && acierto!=true)
+                {
+                    cant_intentos--;
+                    answer = prompt("Ingrese respuesta");
+                    if (answer===correctAnswer )
+                    {
+                        alert("Adivinaste Felicitaciones!!! :D");
+                        acierto = true;	
+                    }
+                    else if ( cant_intentos==3 && acierto!=true)
+                    {
+                        alert("PISTA 1: Es menos de la mitad de la cantidad de peliculas que componen la serie cinematografica 'Harry Potter'");
+                    }
+                    else if (cant_intentos==2 && acierto!=true)
+                    {
+                        alert("PISTA 2 : Existe una marca de fósforos que te puede ayudar");
+                    }
+                    else if(cant_intentos==1 && acierto!=true)
+                    {
+                        alert("LE QUEDA " + cant_intentos + " INTENTO !!! PISTA 3 : Bueno, está bien, es una trilogía!");
+                    }
+                }
+                document.getElementById("solution").innerHTML="La cantidad de peliculas de 'El Padrino' son : <h3>" + correctAnswer + " <br> 'El Padrino' 'El Padrino II' y 'El Padrino III' </h3>";
+            }
+        }
+    </script>
+
+    
+
+    
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+
+
+
+</html>

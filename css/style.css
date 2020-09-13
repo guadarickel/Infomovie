@@ -1,0 +1,676 @@
+:root {
+  --rojo: #c70c0c;
+  --fondo: #202040;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fondo);
+  font-family: "Open Sans", sans-serif;
+}
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  padding: 30px 0;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logotipo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 40px;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #e8505b;
+}
+
+.nav .search-container {
+  float: right;
+}
+.nav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.nav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav .search-container button:hover {
+  background: #ccc;
+}
+
+.nav .search-container {
+  float: none;
+}
+.nav a,
+.nav input[type="text"],
+.nav .search-container button {
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 14px;
+}
+.nav input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+/* 
+
+nav {
+  display: flexbox;
+}
+
+
+input {
+  width: 7.375rem; 
+  color: #1b0627;
+  
+  
+}
+.fa-search {
+  display: flex;
+ 
+ 
+  
+}
+*/
+
+/* Bootstrap 4 text input with search icon 
+
+.input-group-append .boton-search {
+  display: flex;
+  justify-content: space-between;
+  
+  background: #202040b4;
+  border: none;
+  border-radius: 0.31;
+  color: #c70c0c;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+  line-height: 1.375rem;
+  margin-left: 30.375rem ;
+  position: relative;
+
+  
+}
+*/
+/*--------------------------------------------------
+
+input {
+  width: 7.775rem;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #c70c0c;
+  font-size: 0.92em;
+  border: none;
+}
+
+
+.has-search .form-control {
+    padding-left: 1.550rem;
+    display: flex;
+    margin-right: 20px;
+    width: 8.800rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.125rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+---------------------------------------------------*/
+
+/*----  -----  Pelicula principal  -----  -----*/
+
+.pelicula-principal {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.5) 100%),
+    url(../img/medinocheenparis1.jpg);
+  background-position: center left;
+  background-size: cover;
+  margin-bottom: 3.12em;
+
+  display: flex;
+  align-items: end;
+}
+
+.pelicula-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+  background: #202040b4;
+  border: none;
+  border-radius: 0.31;
+  padding: 0.93em 1.87em;
+  color: #c70c0c;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+  background: #fff;
+  color: #202040b4;
+}
+
+.pelicula-principal .boton i {
+  margin-right: 1.25em;
+}
+
+/*------ ------ Contenedor titulos y controles ------ ------ */
+.contenedor-titulo-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+  background: #fff;
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+  background: red;
+}
+
+/*------ ------ Contenedor principal y flechas ------- ------ */
+.peliculas-recomendadas {
+  margin-bottom: 5%;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40%;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+  left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+  right: 0%;
+}
+
+/* ------ ------  Carousel  ----- -----  */
+
+.peliculas-recomendadas .contenedor-carousel {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+  min-width: 20%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* ------ ------  Galeria de imagenes ----- -----  */
+
+.galeria {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  padding: 0% 5%;
+  margin-bottom: 10%;
+}
+
+.galeria img {
+  vertical-align: top;
+  width: 400px;
+  margin: 10px;
+  padding: 3px;
+  opacity: 0.7;
+}
+
+.galeria img:hover {
+  opacity: 1;
+}
+/* ------ ------ Fin Galeria de imagenes ----- -----  */
+
+/* ------ ------  El padrino info ----- -----  */
+
+.el-padrino {
+  width: 100%;
+  display: inline-flex;
+
+  margin: 5% 6%;
+  padding-top: 5%;
+}
+
+.el-padrino img {
+  vertical-align: top;
+  width: 80%;
+  max-width: 300px;
+  margin: 0% 0%;
+  padding: 3px;
+}
+
+.info {
+  margin: 0% 5%;
+}
+.info p {
+  font-weight: normal;
+  font-size: 0.7em;
+  line-height: 1.75em;
+  max-width: 80%;
+  min-width: 20%;
+  margin-bottom: 1.25em;
+  color: #fff;
+}
+
+.info h3 {
+  color: #fff;
+}
+
+.video-padrino {
+  width: 100%;
+  margin-left: 3%;
+}
+
+/* ------ ------  Fin el padrino info ----- -----  */
+
+/* ------ ------  tabla ------ ------ */
+
+.contenedor-tabla-juego {
+  width: 100%;
+  display: inline-flex;
+  margin-left: 3%;
+  margin-right: 30%;
+  padding-top: 5%;
+  margin-bottom: 30%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0% 8%;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: val(--fondo);
+}
+
+th {
+  background-color: #141427;
+  color: white;
+}
+td {
+  font-size: 14px;
+}
+
+tr:hover {
+  color: lightcoral;
+}
+
+.tabla h2 {
+  color: #fff;
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0% 8%;
+  padding-bottom: 10px;
+}
+.aaa {
+  background-color: #141427;
+}
+
+/* ------ ------ Fin tabla ------ ------ */
+
+/* ------ ------ Juego ------ ------ */
+.contenedor-tabla-juego {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor-juego {
+  background-color: #141427;
+  /*opacity: 0.5; */
+  width: 35%;
+  padding-bottom: 2%;
+  margin-left: 16%;
+  color: #fff;
+}
+
+.contenedor-juego h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contenedor-juego p {
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+}
+
+.imagen-juego {
+  width: 100%;
+  text-align: center;
+}
+
+.imagen-juego img {
+  width: 100%;
+}
+
+.contenedor-juego .boton {
+  background-color: #fff;
+  color: var(--fondo);
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.contenedor-juego .boton:hover {
+  opacity: 0.5;
+  color: var(--rojo);
+}
+/* ------ ------ Fin Juego ------ ------ */
+
+/* ------ ------  footer  ----- -----  */
+
+.site-footer {
+  background-color: #141427;
+  padding: 25px 0 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer a {
+  color: #737373;
+  text-align: center;
+}
+.site-footer a:hover {
+  color: #e8505b;
+  text-decoration: none;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.copyright-text {
+  margin-left: 30%;
+  text-align: center;
+}
+
+
+
+
+
+
+/* ------ ------  contacto  ----- -----  */
+
+.formulario {
+  margin: auto;
+  width: 60%;
+}
+
+.container-titulo-contacto H3 {
+  text-align: center;
+  padding-top: 10%;
+  color: #fff;
+  font-size: 40px;
+}
+
+.container-contacto {
+  border-radius: 5px;
+  background-color: var(--fondo);
+  padding: 5%;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input[type="text"],
+select,
+textarea,
+[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  color: var(--fondo);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: var(--rojo);
+  opacity: 0.7;
+}
+
+/*------ ------ Media Queries ------ ------ */
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pelicula-principal {
+    font-size: 12px;
+  }
+
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+  }
+
+  .peliculas-recomendadas .contenedor-carousel {
+    overflow: visible;
+  }
+
+  .peliculas-recomendadas .contenedor-carousel .carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .peliculas-recomendadas .indicadores,
+  .peliculas-recomendadas .flecha-izquierda,
+  .peliculas-recomendadas .flecha-derecha {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  .el-padrino {
+    display: contents;
+  }
+
+  .el-padrino img {
+    width: 30%;
+  }
+
+  .video-padrino {
+    width: 100%;
+    display: inline-flex end;
+  }
+
+  .info {
+    width: 100%;
+    min-width: 100px;
+    align-items: end;
+  }
+
+  .contenedor-tabla-juego {
+    flex-direction: column;
+    width: 100%;
+    margin: 2%;
+  }
+  .contenedor-juego {
+    width: 90%;
+    min-width: fit-content;
+    margin: 2%;
+    margin-right: 8%;
+    align-items: center;
+  }
+
+  .tabla {
+    width: 100%;
+    margin: 0%;
+    align-items: center;
+    size: 20%;
+  }
+}
+
+
