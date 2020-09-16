@@ -1,345 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shorcut icon" type="image/x-icon" href="/img/favicon.ico?">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/all.miin.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+          rel="stylesheet"
     />
-    
-
     <title class="logotipo">InfoMovie</title>
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
     <!-- Google Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
     <!-- Material Diseño Bootstrap -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"/>
+</head>
 
-  <body>
-    <header>
-      <div class="contenedor">
-        <h2 class="logotipo">InfoMovie</h2>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-transparent align-content-around mb">
+        <a class="navbar-brand logotipo ml-5" href="#">Infomovie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link activo" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="peliculas.html">Peliculas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mas-recientes.html" tabindex="-1" aria-disabled="true">Mas Recientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mas-recientes.html" tabindex="-1" aria-disabled="true">Mi Lista</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-        <!--  Logo con link al indice: <a href="index.html"><h2 class="logotipo">InfoMovie</h2></a>    -->
-
-        <nav>
-          <a href="#" class="activo">Inicio</a>
-          <a href="peliculas.html" target="_blank">Películas</a>
-          <a href="mas-recientes.html" target="_blank">Mas Recientes</a>
-          <a href="mi-lista.html" target="_blank">Mi lista</a>
-
-
-          <!-- Hacer el buscador con la lupa como la de netflix (lo intente pero no me sale todavia)
-
-
-            <div class="search-container">
-              <form action="/action_page.php">
-              <input type="text" placeholder="Buscar..." name="search" />
-              <button role="button" class="boton-search">
-              <i class="fa fa-search"></i>
-              </button>
-
-              <!-- <button type="submit">Buscar</button>
-            </form>
-          </div>
-
-
-         -->
-         
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <div class="pelicula-principal">
+<main>
+    <div class="pelicula-principal">
         <div class="contenedor">
-          <h3 class="titulo">Medianoche en París</h3>
-          <p class="descripcion">
-            Un escritor norteamericano algo bohemio llega con su prometida Inez
-            y los padres de ésta a París. Mientras vaga por las calles soñando
-            con los felices años 20, cae bajo una especie de hechizo que hace
-            que, a medianoche, en algún lugar del barrio Latino, se vea
-            transportado a otro universo donde va a conocer a personajes que
-            jamás imaginaría iba a conocer...
-          </p>
+            <h3 class="titulo pt-4">Medianoche en París</h3>
+            <p class="descripcion">
+                Un escritor norteamericano algo bohemio llega con su prometida Inez
+                y los padres de ésta a París. Mientras vaga por las calles soñando
+                con los felices años 20, cae bajo una especie de hechizo que hace
+                que, a medianoche, en algún lugar del barrio Latino, se vea
+                transportado a otro universo donde va a conocer a personajes que
+                jamás imaginaría iba a conocer...
+            </p>
 
-          <!-- <i class="fas fa-play"></i>Reproducir  => fas fa-play es el nombre del icono invocado de fontawesome al igual que fas fa-info -->
+            <!-- <i class="fas fa-play"></i>Reproducir  => fas fa-play es el nombre del icono invocado de fontawesome al igual que fas fa-info -->
 
-          <a href="https://youtu.be/gFIU0WwQSiI" target="_blank"><button role="button" class="boton">
-            <i class="fas fa-play"></i>Reproducir
-          </button></a> 
-
-         
-          <a href="https://www.filmaffinity.com/ar/film567174.html" target="_blank">
-          <button role="button" class="boton">
-            <i class="fas fa-info"></i>Más información
-          </button></a>
+            <a href="https://youtu.be/gFIU0WwQSiI" target="_blank">
+                <button role="button" class="boton">
+                    <i class="fas fa-play"></i>Reproducir
+                </button>
+            </a>
+            <a href="https://www.filmaffinity.com/ar/film567174.html" target="_blank">
+                <button role="button" class="boton">
+                    <i class="fas fa-info"></i>Más información
+                </button>
+            </a>
         </div>
-      </div>
-
-      <!-- comienza carousel peliculas recomendadas -->
-
-      <div class="peliculas-recomendadas contenedor">
-        <div class="contenedor-titulo-controles">
-          <h3>Películas Recomendadas</h3>
-          <div class="indicadores"></div>
-        </div>
-
-        <div class="contenedor-principal">
-          <button role="button" id="flecha-izquierda" class="flecha-izquierda">
-            <i class="fas fa-angle-left"></i>
-          </button>
-
-          <div class="contenedor-carousel">
-            <div class="carousel">
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/elresplandor1.jpg"
-                    alt="Imagen de la pelicula el resplandor"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#">
-                  <img
-                    src="img/elpianista3.jpg"
-                    alt="Imagen de la pelicula el pianista"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/laventanaindiscreta2.jpg"
-                    alt="Imagen de la pelicula la ventana indiscreta"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/matchpoint1.jpg"
-                    alt="Imagen de la pelicula matchpoint"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/vickycristina1.jpg"
-                    alt="Imagen de la pelicula Vicky Cristina Barcelona"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/cinemaparadiso1.jpg"
-                    alt="Imagen de la pelicula Cinema paradiso"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/lachicadesconocida2.png"
-                    alt="Imagen de la pelicula la chica desconocida"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/elresplandor1.jpg"
-                    alt="Imagen de la pelicula el resplandor"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#">
-                  <img
-                    src="img/elpianista3.jpg"
-                    alt="Imagen de la pelicula el pianista"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/laventanaindiscreta2.jpg"
-                    alt="Imagen de la pelicula la ventana indiscreta"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/matchpoint1.jpg"
-                    alt="Imagen de la pelicula matchpoint"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/vickycristina1.jpg"
-                    alt="Imagen de la pelicula Vicky Cristina Barcelona"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/cinemaparadiso1.jpg"
-                    alt="Imagen de la pelicula Cinema paradiso"
-                /></a>
-              </div>
-
-              <div class="pelicula">
-                <a href="#"
-                  ><img
-                    src="img/lachicadesconocida2.png"
-                    alt="Imagen de la pelicula la chica desconocida"
-                /></a>
-              </div>
-            </div>
-          </div>
-
-          <button role="button" id="flecha-derecha" class="flecha-derecha">
-            <i class="fas fa-angle-right"></i>
-          </button>
-        </div>
-      </div>
-
-    </main>
-
-
-<section>
-
-    <div class="galeria">
-      <img src="img/cinema paradiso2.jpg" alt="Cinema paradiso">
-      <img src="img/lachicadesconocida.jpg" alt="La Chica Desconocida">
-      <img src="img/laventanaindiscreta4.jpg" alt="La ventana Indiscreta">
-      <img src="img/medianocheenparis2.jpg" alt="Media noche en Paris">
-      <img src="img/thepianist2.jpg" alt="El pianista">
-      <img src="img/vickycristina2.jpg" alt="Vicky Cristina Barcelona">
     </div>
 
+    <!-- comienza carousel peliculas recomendadas -->
 
+    <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+            <h3>Películas Recomendadas</h3>
+            <div class="indicadores"></div>
+        </div>
+        <div class="contenedor-principal">
+            <button role="button" id="flecha-izquierda" class="flecha-izquierda">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="contenedor-carousel">
+                <div class="carousel">
+                    <div class="pelicula">
+                        <a href="#"
+                        ><img
+                                src="img/elresplandor1.jpg"
+                                alt="Imagen de la pelicula el resplandor"
+                        /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#">
+                            <img
+                                    src="img/elpianista3.jpg"
+                                    alt="Imagen de la pelicula el pianista"
+                            /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"
+                        ><img
+                                src="img/laventanaindiscreta2.jpg"
+                                alt="Imagen de la pelicula la ventana indiscreta"
+                        /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"
+                        ><img
+                                src="img/matchpoint1.jpg"
+                                alt="Imagen de la pelicula matchpoint"
+                        /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"
+                        ><img
+                                src="img/vickycristina1.jpg"
+                                alt="Imagen de la pelicula Vicky Cristina Barcelona"
+                        /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"
+                        ><img
+                                src="img/cinemaparadiso1.jpg"
+                                alt="Imagen de la pelicula Cinema paradiso"
+                        /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"
+                        ><img
+                                src="img/lachicadesconocida2.png"
+                                alt="Imagen de la pelicula la chica desconocida"
+                        /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"
+                        ><img
+                                src="img/elresplandor1.jpg"
+                                alt="Imagen de la pelicula el resplandor"
+                        /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#">
+                            <img
+                                    src="img/elpianista3.jpg"
+                                    alt="Imagen de la pelicula el pianista"
+                            /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"
+                        ><img
+                                src="img/laventanaindiscreta2.jpg"
+                                alt="Imagen de la pelicula la ventana indiscreta"
+                        /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"
+                        ><img
+                                src="img/matchpoint1.jpg"
+                                alt="Imagen de la pelicula matchpoint"
+                        /></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#">
+                          <img src="img/vickycristina1.jpg" alt="Imagen de la pelicula Vicky Cristina Barcelona" />
+                        </a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#">
+                          <img src="img/cinemaparadiso1.jpg" alt="Imagen de la pelicula Cinema paradiso"/>
+                        </a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#">
+                          <img src="img/lachicadesconocida2.png" alt="Imagen de la pelicula la chica desconocida"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button role="button" id="flecha-derecha" class="flecha-derecha">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+    </div>
+
+</main>
+
+<section>
+    <div class="galeria">
+        <img src="img/cinema paradiso2.jpg" alt="Cinema paradiso">
+        <img src="img/lachicadesconocida.jpg" alt="La Chica Desconocida">
+        <img src="img/laventanaindiscreta4.jpg" alt="La ventana Indiscreta">
+        <img src="img/medianocheenparis2.jpg" alt="Media noche en Paris">
+        <img src="img/thepianist2.jpg" alt="El pianista">
+        <img src="img/vickycristina2.jpg" alt="Vicky Cristina Barcelona">
+    </div>
 </section>
 
 <section>
-  <div class="el-padrino">
-    <div class="video-padrino">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/BQBlWQVqABQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="el-padrino">
+        <div class="video-padrino">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BQBlWQVqABQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <div class=info>
+            <img src="img/kisspng-the-godfather-logo-film-vito-corleone-5b2de20cac62c8.8738157615297336447061.png"
+                 alt="El Padrino">
+            <h3>N° 8 en Argentina hoy</h3>
+            <p>América, años 40. Don Vito Corleone, el respetado y temido jefe de una de las cinco familias de la mafia
+                de Nueva York se niega a participar en el negocio de las drogas y el jefe de otra banda ordena su
+                asesinato.
+            </p>
+        </div>
     </div>
-    <div class=info>
-      <img src="img/kisspng-the-godfather-logo-film-vito-corleone-5b2de20cac62c8.8738157615297336447061.png" alt="El Padrino">
-      <h3>N° 8 en Argentina hoy</h3>
-      <p>América, años 40. Don Vito Corleone, el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York se niega a participar en el negocio de las drogas y el jefe de otra banda ordena su asesinato.  
-      </p> 
+
+    <!--  Tabla   -->
+    <div class="contenedor-tabla-juego">
+        <div class="tabla">
+            <h2>Premios Oscar</h2>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Categoria</th>
+                    <th>Receptor</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td class="aaa">1972</td>
+                    <td>Mejor pelicula</td>
+                    <td>Albert S. Ruddyo</td>
+                    <td>Ganadora</td>
+                </tr>
+                <tr>
+                    <td class="aaa"></td>
+                    <td>Mejor director</td>
+                    <td>Francis Ford Coppola</td>
+                    <td>Nominado</td>
+                </tr>
+                <tr>
+                    <td class="aaa"></td>
+                    <td>Mejor actor</td>
+                    <td>Marlon Brando</td>
+                    <td>Ganadora</td>
+                </tr>
+                <tr>
+                    <td class="aaa"></td>
+                    <td>Mejor actor de reparto</td>
+                    <td>James Caan</td>
+                    <td>Nominado</td>
+                </tr>
+                <tr>
+                    <td class="aaa"></td>
+                    <td>Mejor actor de reparto</td>
+                    <td>Robert Duvall</td>
+                    <td>Nominado</td>
+                </tr>
+                <tr>
+                    <td class="aaa"></td>
+                    <td>Mejor actor de reparto</td>
+                    <td>Al Pacino</td>
+                    <td>Nominado</td>
+                </tr>
+                <tr>
+                    <td class="aaa"></td>
+                    <td>Mejor guion adaptado</td>
+                    <td>Francis Ford Coppola y Mario Puzo</td>
+                    <td>Ganadores</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contenedor-juego">
+            <h2>¿Cuánto sabes de <br> "El Padrino"?</h2>
+            <br> <br>
+            <div class="imagen-juego">
+                <img src="img/El_padrino2.jpg" alt="el padrino">
+            </div>
+
+            <p>Participá de este simple juego</p>
+            <br>
+
+            <a href="juego.html" target="_blank">
+                <button type="button" role="button" id="play-button" class="boton" data-toggle="modal"
+                        data-target="#miModal" onclick="juagar_ahora()">Jugar
+                </button>
+            </a>
+        </div>
     </div>
-  </div>
-
-  <!--  Tabla   -->
-
-
-  <div class="contenedor-tabla-juego">
-
-<div class="tabla">
-  <h2>Premios Oscar</h2>
-  <table>
-    <tr>
-     <th>Año</th>
-     <th>Categoria</th>
-     <th>Receptor</th>
-     <th>Resultado</th>
-    </tr>
-    <tr>
-     <td class="aaa">1972</td>
-     <td>Mejor pelicula</td>
-     <td>Albert S. Ruddyo</td>
-     <td>Ganadora</td>
-    </tr>
-    <tr>
-      <td class="aaa"></td>
-     <td>Mejor director</td>
-     <td>Francis Ford Coppola</td>
-     <td>Nominado</td>
-    </tr>
-    <tr>
-      <td class="aaa"></td>
-     <td>Mejor actor</td>
-     <td>Marlon Brando</td>
-     <td>Ganadora</td>
-    </tr>
-    <tr>
-      <td class="aaa"></td>
-     <td>Mejor actor de reparto</td>
-     <td>James Caan</td>
-     <td>Nominado</td>
-    </tr>
-    <tr>
-      <td class="aaa"></td>
-     <td>Mejor actor de reparto</td>
-     <td>Robert Duvall</td>
-     <td>Nominado</td>
-    </tr>
-    <tr>
-      <td class="aaa"></td>
-     <td>Mejor actor de reparto</td>
-     <td>Al Pacino</td>
-     <td>Nominado</td>
-    </tr>
-    <tr>
-      <td class="aaa"></td>
-     <td>Mejor guion adaptado</td>
-     <td>Francis Ford Coppola y Mario Puzo</td>
-     <td>Ganadores</td>
-    </tr>
-            
-  </table>
-
-</div>
- 
-
-<div class="contenedor-juego">
-  <h2>¿Cuánto sabes de <br> "El Padrino"?</h3> 
-  <br> <br>
-  <div class="imagen-juego">
-    <img src="img/El_padrino2.jpg" alt="el padrino">
-  </div>
-  
-  <p>Participá de este simple juego</p> 
-  <br> 
-  
-    <a href="juego.html" target="_blank">
-    <button type="button" role="button" id="play-button" class="boton" data-toggle="modal" data-target="#miModal" onclick="juagar_ahora()">Jugar</button></a>
-        
-
-
-</div>
-
-</div>
-
 </section>
 
 
@@ -347,73 +298,42 @@
 <img src="img/matchpoint2.jpg" alt="Match Point">
 -->
 <div class="container-titulo-contacto">
-  <h3>CONTACTANOS! </h3>
+    <h3>CONTACTANOS! </h3>
 </div>
-
 
 <div class="container-contacto">
-  <form class="formulario" action="/action_page.php">
-    
-    <label for="name">Nombre y apellido</label> <br>
-    <input type="text" id="name" name="nombre" placeholder="Ingrese su nombre y apellido"> <br><br>
-
-    <label for="email">Email</label> <br>
-    <input type="email" id="email" name="email" placeholder="Ingrese su email"> <br> <br>
-    
-    <label for="subject">Mensaje</label> <br>
-    <textarea id="subject" name="subject" placeholder="Escriba su mensaje" style="height:200px"></textarea> <br> <br>
-
-    <input type="submit" value="Enviar">
-  </form>
+    <form class="formulario" action="/action_page.php">
+        <label for="name">Nombre y apellido</label> <br>
+        <input type="text" id="name" name="nombre" placeholder="Ingrese su nombre y apellido"> <br><br>
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" name="email" placeholder="Ingrese su email"> <br> <br>
+        <label for="subject">Mensaje</label> <br>
+        <textarea id="subject" name="subject" placeholder="Escriba su mensaje" style="height:200px"></textarea> <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
 </div>
+<script src="https://kit.fontawesome.com/1e36939019.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
 
-
-
-
-
-    <script
-      src="https://kit.fontawesome.com/1e36939019.js"
-      crossorigin="anonymous"
-    ></script>
-    
-    <script src="js/main.js"></script>
-
-    <!-- JQuery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-    <!-- Bootstrap tooltips -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
-    ></script>
-    <!-- Bootstrap core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
-    ></script>
-    <!-- MDB core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
-    ></script>
-
-
-    
-  </body>
-
-<!-- footer -->
-    <footer class="site-footer">
-      
-
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Guadalupe Rickel &copy; 2020 
+<footer class="container-fluid site-footer">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Guadalupe Rickel &copy; 2020
                 <a href="#">InfoMovie</a>.
-              </p>
-          </div>
-
+            </p>
+        </div>
+    </div>
 </footer>
+</body>
 </html>
