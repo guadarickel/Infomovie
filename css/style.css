@@ -167,9 +167,8 @@ input {
   background-position: center left;
   background-size: cover;
   margin-bottom: 3.12em;
-
   display: flex;
-  align-items: end;
+  align-items: center;
 }
 
 .pelicula-principal .contenedor {
